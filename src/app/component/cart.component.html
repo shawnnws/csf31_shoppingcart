@@ -1,0 +1,17 @@
+<h1>My Cart</h1>
+
+<table>
+    <thead>
+        <td>Item</td>
+        <td>Quantity</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of cartItems">
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>
+                <button class="btn btn-primary" (click)="deleteItem(item.name)">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,17 @@
+<h1>Please Select</h1>
+
+<table>
+    <thead>
+        <td>Item</td>
+        <td>Description</td>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of items">
+            <td>{{ item.name }}</td>
+            <td>{{ item.description }}</td>
+            <td>
+                <button type="button" (click)="selectedItem(item.name)">Add</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
